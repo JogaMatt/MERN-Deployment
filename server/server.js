@@ -12,4 +12,4 @@ app.use(express.urlencoded({ extended: true }));
 require('./routes/card.routes')(app);
 require('./routes/pokedex.routes')(app);
 
-app.listen(process.env.PORT || localPort, () => console.log(`We're up and rolling on port ${port}!`));
+app.listen(process.env.PORT || localPort, () => console.log(`We're up and rolling on port ${localPort}!`));
