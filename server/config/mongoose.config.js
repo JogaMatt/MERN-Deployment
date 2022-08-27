@@ -9,5 +9,3 @@ mongoose.connect(CONNECTION_URL, {
 })
     .then(() => console.log(`Established a connection to the ${database} database!`))
     .catch(err => console.log(`Something went wrong: ${err}`));
-
-mongoose.set('useFindAndModify', false)
