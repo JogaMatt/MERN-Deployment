@@ -12,4 +12,10 @@ app.use(express.urlencoded({ extended: true }));
 require('./routes/card.routes')(app);
 require('./routes/pokedex.routes')(app);
 
-app.listen(process.env.PORT || localPort, () => console.log(`We're up and rolling on port ${localPort}!`));
+const herokuPort = process.env.PORT
+console.log(herokuPort)
+
+app.listen(herokuPort || localPort, () => {
+    console.log(`We're up and rolling on port ${localPort}!`)
+    console.log(`Heroku is connected on ${herokuPort}`)
+});
