@@ -9,7 +9,7 @@ const CardDetails = () => {
     const [myCard, setMyCard] = useState([])
     const [image, setImage] = useState('')
     const oneCardApi = `https://api.pokemontcg.io/v2/cards?q=id:${cardId}`
-    const saveCardAPI = 'http://localhost:8000/api/myCards'
+    const saveCardAPI = 'mongodb+srv://JogaMatt:LilMan315@cluster0.zzixcng.mongodb.net/?retryWrites=true&w=majority/api/myCards'
     const myCardAPI = `http://localhost:8000/api/myCards/${cardId}`
     const navigate = useNavigate()
 
