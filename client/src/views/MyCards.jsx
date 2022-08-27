@@ -6,7 +6,7 @@ const MyCards = () => {
   const [myCards, setMyCards] = useState([])
   const pageSize = 15
   const [currentPage, setCurrentPage] = useState(1)
-  const myCardsAPI = 'mongodb+srv://JogaMatt:LilMan315@cluster0.zzixcng.mongodb.net/?retryWrites=true&w=majority/api/myCards'
+  const myCardsAPI = 'http://localhost:8000/api/myCards'
 
   const pageLimit = Math.ceil(myCards.length / pageSize)
   const nextPage = () => {

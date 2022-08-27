@@ -9,7 +9,7 @@ const CardDetails = () => {
     const [myCard, setMyCard] = useState([])
     const [image, setImage] = useState('')
     const oneCardApi = `https://api.pokemontcg.io/v2/cards?q=id:${cardId}`
-    const saveCardAPI = 'mongodb+srv://JogaMatt:LilMan315@cluster0.zzixcng.mongodb.net/?retryWrites=true&w=majority/api/myCards'
+    const saveCardAPI = 'http://localhost:8000/api/myCards'
     const myCardAPI = `http://localhost:8000/api/myCards/${cardId}`
     const navigate = useNavigate()
 
@@ -101,7 +101,7 @@ const CardDetails = () => {
             <div id="cardBox">
               <div className="leftSide">
                 <img id='bigCard' src={card.images.large} alt="" /> 
-                {
+                {/* {
                   card.supertype === 'Pokémon'
                   ?
                   <Link style={{textDecoration: 'none'}} to={`/pokedex/${lowerName}`}><button className='btn btn-info' style={{marginLeft: 18,color: 'white', fontFamily: 'sans-serif'}}>Find {name} in the Pokedex</button></Link>
@@ -129,7 +129,7 @@ const CardDetails = () => {
                     <input type="hidden" value={image}/>
                     <button className='btn btn-success' style={{width: 275,color: 'white', fontFamily: 'sans-serif', marginLeft: 0, marginTop: 15, letterSpacing: -0.5}}>Add {card.name} to your Collection!</button>
                   </form>
-                }
+                } */}
               </div>
               <div className="rightSide">
                 <div className="nameBox">

@@ -56,7 +56,7 @@ const Form = (props) => {
               </div>
               <div className="black">
                     <Link to={'/'} id='myCollection' style={{color: 'white', textDecoration: 'none', fontSize: 20, marginBottom: 5, marginLeft: 115}}><b>Home</b></Link>
-                  <Link to={'/myCards'} id='myCollection' style={{color: 'white', textDecoration: 'none', fontSize: 20, marginBottom: 5}}><b>My Collection</b></Link>
+                  {/* <Link to={'/myCards'} id='myCollection' style={{color: 'white', textDecoration: 'none', fontSize: 20, marginBottom: 5}}><b>My Collection</b></Link> */}
               </div>
             <Outlet/>
           </div>
